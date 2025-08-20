@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="stylebread.css">
 </head>
 <body>
+    <h1>Registro Panadería</h1>
+
     <!-- Encabezado con menú -->
     <header>
         <nav>
@@ -24,9 +26,40 @@
         <p>Nuestro sitio web se dedica a ofrecer el mejor pan fresco de la zona.</p>
     </section>
 
+    <!-- Formulario de registro -->
+    <section id="registro">
+        <h2>Formulario de Registro</h2>
+        <form action="/procesar-registro" method="post">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" name="password" id="password" required>
+
+            <p>¿Qué productos te interesan?</p>
+            <input type="checkbox" id="pan-blandito" name="productos[]" value="Pan Blandito">
+            <label for="pan-blandito">Pan Blandito</label><br>
+
+            <input type="checkbox" id="mogolla" name="productos[]" value="Mogolla">
+            <label for="mogolla">Mogolla </label><br>
+
+            <input type="checkbox" id="croissant" name="productos[]" value="Croissant">
+            <label for="croissant">Croissant</label><br>
+
+            <input type="checkbox" id="roscon" name="productos[]" value="Roscón">
+            <label for="roscon">Roscón</label><br>
+
+            <input type="checkbox" id="pan-integral" name="productos[]" value="Pan Integral">
+            <label for="pan-integral">Pan Integral</label><br>
+
+            <br>
+            <button type="submit">Registrar</button>
+        </form>
+    </section>
+
     <!-- Tarjetas de productos -->
     <article class="product-card">
-        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1170&q=80" alt="Pan recién horneado" width="300">
+        <img src="https://sweetysalado.com/wp-content/uploads/2015/02/Pan-Blandito-SyS.jpg" alt="Pan recién horneado" width="300">
         <div class="product-info">
             <h2>Pan Blandito</h2>
             <p class="price">$1.500</p>
