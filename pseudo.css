@@ -1,0 +1,164 @@
+/* Tamaño base de cada celda */
+.element {
+  width: 65px;
+  height: 65px;
+  border: 1px solid #333;
+  text-align: center;
+  vertical-align: middle;
+  padding: 4px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.element:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Número atómico */
+.element .number {
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 2px;
+}
+
+/* Símbolo */
+.element .symbol {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Nombre */
+.element .name {
+  font-size: 9px;
+}
+
+/* ================== COLORES POR TIPO ================== */
+
+/* No metales */
+.nonmetal {
+  background-color: #a5d6a7; /* verde suave */
+}
+
+/* Metales alcalinos */
+.alkali-metal {
+  background-color: #ffcc80; /* naranja suave */
+}
+
+/* Alcalinotérreos */
+.alkaline-earth {
+  background-color: #ffe082; /* amarillo suave */
+}
+
+/* Metales de transición */
+.transition-metal {
+  background-color: #90caf9; /* azul suave */
+}
+
+/* Metales */
+.metal {
+  background-color: #b0bec5; /* gris azulado */
+}
+
+/* Metaloides */
+.metalloid {
+  background-color: #ce93d8; /* lila */
+}
+
+/* Halógenos */
+.halogen {
+  background-color: #f48fb1; /* rosado */
+}
+
+/* Gases nobles */
+.noble-gas {
+  background-color: #80deea; /* celeste */
+}
+
+/* Lantánidos */
+.lanthanide {
+  background-color: #d1c4e9; /* púrpura claro */
+}
+
+/* Actínidos */
+.actinide {
+  background-color: #bcaaa4; /* marrón claro */
+}
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contenedor de la tabla */
+.table {
+    display: grid;
+    grid-template-columns: repeat(18, 70px); /* 18 columnas para la tabla periódica */
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Estilo de cada elemento */
+.element {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+/* Número atómico */
+.element .number {
+    font-size: 10px;
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    color: #444;
+}
+
+/* Símbolo químico */
+.element .symbol {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #111;
+}
+
+/* Nombre del elemento */
+.element .name {
+    font-size: 10px;
+    margin-top: 2px;
+    color: #333;
+}
+
+/* Hover */
+.element:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Colores por categoría */
+.nonmetal { background-color: #a8dadc; }
+.noble-gas { background-color: #ffcccb; }
+.alkali-metal { background-color: #ffe066; }
+.alkaline-earth-metal { background-color: #ffd6a5; }
+.metalloid { background-color: #bdb2ff; }
+.halogen { background-color: #caffbf; }
+.transition-metal { background-color: #9bf6ff; }
+.lanthanide { background-color: #fdffb6; }
+.actinide { background-color: #ffadad; }
+.post-transition-metal { background-color: #caffbf; }
